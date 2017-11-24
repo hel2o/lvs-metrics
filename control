@@ -33,7 +33,7 @@ function pack() {
     build
     git log -1 --pretty=%h > gitversion
     version=`./$app -version`
-    tar zcvf $app-$version.tar.gz control $app cfg.example.json gitversion
+    tar zcvf $app-$version.tar.gz control $app cfg.json gitversion
     rm -f gitversion &>/dev/null
 }
 
