@@ -18,7 +18,7 @@ Dependencies are handled by [godep][], simple install it and type `godep restore
 #### The libnl3 needed in compile and production machine.
 
 ```console
-# sudo yum install -y loplibnl*  
+# sudo yum install -y libnl*  
 or
 # sudo apt-get install libnl-3-dev libnl-genl-3-dev
 ```
