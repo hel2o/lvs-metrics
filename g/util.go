@@ -12,6 +12,9 @@ import (
 
 // get hostname
 func Hostname() (string, error) {
+	if Config().Hostname != "" {
+		return Config().Hostname, nil
+	}
 	hostname, err := os.Hostname()
 	if err != nil {
 		glog.Warningf("ERROR: os.Hostname() fail %v", err)

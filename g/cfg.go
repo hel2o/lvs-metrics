@@ -25,6 +25,7 @@ type TransferConfig struct {
 // global config file
 type GlobalConfig struct {
 	Debug      bool            `json:"debug"`
+	Hostname   string          `json:"hostname"`
 	AttachTags string          `json:"attachtags"`
 	Http       *HttpConfig     `json:"http"`
 	Transfer   *TransferConfig `json:"transfer"`
